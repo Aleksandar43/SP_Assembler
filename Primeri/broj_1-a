@@ -1,0 +1,12 @@
+.data
+.char
+.long
+.word
+.align
+.skip
+.text.prva
+.text.druga
+.public
+.extern
+@decimalno, heksadecimalno
+.end

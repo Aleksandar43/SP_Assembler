@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1470663916 source:c:\users\aleksandar\documents\code blocks projects\sp_assembler\main.cpp
+	<stdio.h>
+	<iostream>
+
+1470662693 source:c:\users\aleksandar\documents\code blocks projects\sp_assembler\procesor.cpp
+	"Procesor.h"
+
+1470662853 c:\users\aleksandar\documents\code blocks projects\sp_assembler\procesor.h
+	<stdint.h>
+
+1470662693 source:c:\users\probni\documents\code blocks projects\sp_assembler\procesor.cpp
+	"Procesor.h"
+
+1470662853 c:\users\probni\documents\code blocks projects\sp_assembler\procesor.h
+	<stdint.h>
+
+1473943630 source:c:\users\probni\documents\code blocks projects\sp_assembler\main.cpp
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	"TabelaSimbola.h"
+
+1473943656 source:c:\users\probni\documents\code blocks projects\sp_assembler\tabelasimbola.cpp
+	"TabelaSimbola.h"
+
+1473942014 c:\users\probni\documents\code blocks projects\sp_assembler\tabelasimbola.h
+	<stdio.h>
+	<vector>
+	<cstring>
+
