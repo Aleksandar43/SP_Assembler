@@ -1,12 +1,51 @@
 .data
-.char
-.long
-.word
+jedan_bajt: .char 0x40
+dugo: .long jedan_bajt
+.skip 10
+reci: .word 1024, 0x200
+maska: .long 0x80000000
 .align
-.skip
-.text.prva
-.text.druga
-.public
-.extern
-@decimalno, heksadecimalno
+.text.maxbit
+	@r0 - rezultat
+	@r1 - pocetna vrednost
+maxbit:
+	mov r0,-1 al
+	mov r2,maska
+	cmp r1,0 @bez f
+	mov pc,lr eq f
+compare:	and r1,r2 f
+	mov pc,found ne @if(r1!=0) -> found
+	shr r2,1
+	mov pc,compare al
+found:	xor r0,r0
+cntloop:	add r0,1
+	shr r2,1 f
+	mov pc,cntloop ne @if(r2!=0) -> cntloop
+	mov pc,lr f
+	
+.text.brbitova
+	@r0 - rezultat
+	@r1 - pocetna vrednost
+brbitova:
+	mov r0,0 al
+	mov r2,maska
+	cmp r1,0 @bez f
+	mov pc,lr eq f
+nloop:	test r1,r2
+	add r0,1 ne
+	shr r2,1 f
+	mov pc,nloop ne
+	mov pc,lr f
+
+.public maska
+@decimalno, heksadecimalno ?
+main:
+	ldc r14,0 @ldcl + ldch
+	in r1,r14
+	call maxbit
+	out r0,r14
+	add r14,1
+	in r1,r14
+	call brbitova
+	out r0,r14
 .end

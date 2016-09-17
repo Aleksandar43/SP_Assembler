@@ -15,17 +15,33 @@
 1470662853 c:\users\probni\documents\code blocks projects\sp_assembler\procesor.h
 	<stdint.h>
 
-1473943630 source:c:\users\probni\documents\code blocks projects\sp_assembler\main.cpp
-	<stdio.h>
+1474073715 source:c:\users\probni\documents\code blocks projects\sp_assembler\main.cpp
 	<iostream>
 	<stdlib.h>
 	"TabelaSimbola.h"
+	"CitacLinije.h"
+	"GreskaAsemblera.h"
 
-1473943656 source:c:\users\probni\documents\code blocks projects\sp_assembler\tabelasimbola.cpp
+1474076976 source:c:\users\probni\documents\code blocks projects\sp_assembler\tabelasimbola.cpp
 	"TabelaSimbola.h"
 
-1473942014 c:\users\probni\documents\code blocks projects\sp_assembler\tabelasimbola.h
+1474076951 c:\users\probni\documents\code blocks projects\sp_assembler\tabelasimbola.h
 	<stdio.h>
 	<vector>
 	<cstring>
+	<iostream>
+
+1474131130 source:c:\users\probni\documents\code blocks projects\sp_assembler\citaclinije.cpp
+	"CitacLinije.h"
+
+1474131680 c:\users\probni\documents\code blocks projects\sp_assembler\citaclinije.h
+	<vector>
+	<map>
+	<iostream>
+	<stdio.h>
+	"TabelaSimbola.h"
+	"GreskaAsemblera.h"
+
+1474073755 c:\users\probni\documents\code blocks projects\sp_assembler\greskaasemblera.h
+	<iostream>
 

@@ -1,3 +1,4 @@
+.extern printf
 .text
 main:
 	@r0 - x
@@ -5,10 +6,10 @@ main:
 	@r2 - stepen polinoma
 	mov r3,r0
 	mov r4,r1
-	ldr r0,r4,2,0 @r0=r4, r4=a[1]
+	ldr r0,r4,ia,0 @r0=r4, r4=a[1]; ia=increment after
 	cmp r2,-1 f
 	mov pc,exit ge
-	ldr r1,r4,2,0 @r1=[r4+0], r4=r4+4
+	ldr r1,r4,ia,0 @r1=[r4+0], r4=r4+4
 	mul r0,r3 @a*x
 	add r0,r1 @a*x+b
 	sub r2,1

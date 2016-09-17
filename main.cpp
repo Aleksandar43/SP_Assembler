@@ -1,7 +1,10 @@
-#include <stdio.h>
+//#include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
 #include "TabelaSimbola.h"
+#include "CitacLinije.h"
+#include "GreskaAsemblera.h"
+#pragma GCC diagnostic ignored "-Wwrite-strings"
 
 using namespace std;
 
@@ -18,6 +21,10 @@ int main(int argc,char* argv[])
         return 0;
     }
     /*Ukloniti komentare?*/
+    try{
+
+    } catch(GreskaAsemblera g){cout<<g;}
+
     char *broj="0x200";
     int x=atoi(broj);
     cout<<x<<endl;
