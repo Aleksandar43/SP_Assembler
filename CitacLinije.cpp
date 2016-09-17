@@ -42,11 +42,16 @@ void CitacLinije::procitajLiniju()
 void CitacLinije::obradaLinije()
 {
     linijaFajla++;
-
+    if(stringovi[0]=="") return;
+    unsigned pos=stringovi[0].find(".",1);
+    string doTacke;
+    if(pos!=string::npos) doTacke=stringovi[0].substr(0,pos);
+    else doTacke=stringovi[0];
+    if(direktive.find(doTacke)!=direktive.end()) direktive[doTacke]();
 }
 void CitacLinije::fPublic()
 {
-
+    TabelaSimbola::dodajSimbol(stringovi[1],trenutnaSekcija,brojacSekcije,'g');
 }
 
 void CitacLinije::fExtern()
@@ -97,4 +102,10 @@ void CitacLinije::fAlign()
 void CitacLinije::fSkip()
 {
 
+}
+
+void CitacLinije::proba1(){
+    stringovi.push_back(".public");
+    stringovi.push_back("MAKRO");
+    obradaLinije();
 }

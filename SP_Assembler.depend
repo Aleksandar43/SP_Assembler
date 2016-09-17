@@ -15,7 +15,7 @@
 1470662853 c:\users\probni\documents\code blocks projects\sp_assembler\procesor.h
 	<stdint.h>
 
-1474073715 source:c:\users\probni\documents\code blocks projects\sp_assembler\main.cpp
+1474146264 source:c:\users\probni\documents\code blocks projects\sp_assembler\main.cpp
 	<iostream>
 	<stdlib.h>
 	"TabelaSimbola.h"
@@ -31,10 +31,10 @@
 	<cstring>
 	<iostream>
 
-1474131130 source:c:\users\probni\documents\code blocks projects\sp_assembler\citaclinije.cpp
+1474144370 source:c:\users\probni\documents\code blocks projects\sp_assembler\citaclinije.cpp
 	"CitacLinije.h"
 
-1474131680 c:\users\probni\documents\code blocks projects\sp_assembler\citaclinije.h
+1474141063 c:\users\probni\documents\code blocks projects\sp_assembler\citaclinije.h
 	<vector>
 	<map>
 	<iostream>

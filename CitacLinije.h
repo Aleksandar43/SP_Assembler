@@ -37,7 +37,7 @@ class CitacLinije
         static void fLong();
         static void fAlign();
         static void fSkip();
-
+        static void proba1();
 };
 
 #endif // CITACLINIJE_H

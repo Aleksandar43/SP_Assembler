@@ -20,15 +20,11 @@ int main(int argc,char* argv[])
         cout<<"Ne postoji fajl sa tim imenom!\n";
         return 0;
     }
+    CitacLinije::init();
     /*Ukloniti komentare?*/
     try{
-
+        CitacLinije::proba1();
     } catch(GreskaAsemblera g){cout<<g;}
-
-    char *broj="0x200";
-    int x=atoi(broj);
-    cout<<x<<endl;
-    TabelaSimbola::dodajSimbol("labela1","text",8,'l');
     TabelaSimbola::ispisi();
     fclose(fajl);
     return 0;
